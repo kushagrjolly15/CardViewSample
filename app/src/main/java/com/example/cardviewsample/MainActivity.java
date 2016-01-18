@@ -1,10 +1,13 @@
 package com.example.cardviewsample;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Toast;
 
 import com.github.brnunes.swipeablerecyclerview.SwipeableRecyclerViewTouchListener;
 
@@ -54,9 +57,18 @@ public class MainActivity extends Activity {
         mAdapter = new SampleAdapter(this, myDataSet);
         mRecyclerView.setAdapter(mAdapter);
 
+        //ロングタップ
+
+
+
+
+
+/*
+        //スワイプした時の処理
         SwipeableRecyclerViewTouchListener swipeTouchListener =
                 new SwipeableRecyclerViewTouchListener(mRecyclerView,
                         new SwipeableRecyclerViewTouchListener.SwipeListener() {
+                            //スワイプできるかどうか
                             @Override
                             public boolean canSwipe(int position) {
                                 return true;
@@ -81,7 +93,13 @@ public class MainActivity extends Activity {
                             }
                         });
 
-        mRecyclerView.addOnItemTouchListener(swipeTouchListener);
+         mRecyclerView.addOnItemTouchListener(swipeTouchListener);
+*/
+
+
     }
+
+
+
 
 }

@@ -14,6 +14,7 @@
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:longClickable="true"
         android:textSize="40dp"
         />
 
